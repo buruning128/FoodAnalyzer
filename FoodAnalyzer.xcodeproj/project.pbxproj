@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F704C7551B7EA60500607747 /* background-gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F704C6791B7EA60500607747 /* background-gradient@2x.png */; };
+		F704C7561B7EA60500607747 /* button-background.png in Resources */ = {isa = PBXBuildFile; fileRef = F704C67A1B7EA60500607747 /* button-background.png */; };
+		F704C7571B7EA60500607747 /* button-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F704C67B1B7EA60500607747 /* button-background@2x.png */; };
+		F704C7581B7EA60500607747 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F704C67C1B7EA60500607747 /* Default-568h@2x.png */; };
+		F704C7591B7EA60500607747 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F704C67D1B7EA60500607747 /* Default.png */; };
+		F704C75A1B7EA60500607747 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F704C67E1B7EA60500607747 /* Default@2x.png */; };
+		F704C75C1B7EA60500607747 /* tutorial_background_01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F704C6801B7EA60500607747 /* tutorial_background_01@2x.jpg */; };
+		F704C75D1B7EA60500607747 /* tutorial_background_02@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F704C6811B7EA60500607747 /* tutorial_background_02@2x.jpg */; };
+		F704C75E1B7EA60500607747 /* tutorial_background_03@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F704C6821B7EA60500607747 /* tutorial_background_03@2x.jpg */; };
+		F704C75F1B7EA60500607747 /* tutorial_background_04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F704C6831B7EA60500607747 /* tutorial_background_04@2x.jpg */; };
+		F7A239B61B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A239B51B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift */; };
 		F7CC62A21B7DE4370027F706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC62A11B7DE4370027F706 /* AppDelegate.swift */; };
 		F7CC62A41B7DE4370027F706 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC62A31B7DE4370027F706 /* FirstViewController.swift */; };
 		F7CC62A61B7DE4370027F706 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC62A51B7DE4370027F706 /* SecondViewController.swift */; };
@@ -27,6 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F704C6791B7EA60500607747 /* background-gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-gradient@2x.png"; sourceTree = "<group>"; };
+		F704C67A1B7EA60500607747 /* button-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background.png"; sourceTree = "<group>"; };
+		F704C67B1B7EA60500607747 /* button-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background@2x.png"; sourceTree = "<group>"; };
+		F704C67C1B7EA60500607747 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F704C67D1B7EA60500607747 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F704C67E1B7EA60500607747 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F704C6801B7EA60500607747 /* tutorial_background_01@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tutorial_background_01@2x.jpg"; path = "Resources/tutorial_background_01@2x.jpg"; sourceTree = "<group>"; };
+		F704C6811B7EA60500607747 /* tutorial_background_02@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tutorial_background_02@2x.jpg"; path = "Resources/tutorial_background_02@2x.jpg"; sourceTree = "<group>"; };
+		F704C6821B7EA60500607747 /* tutorial_background_03@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tutorial_background_03@2x.jpg"; path = "Resources/tutorial_background_03@2x.jpg"; sourceTree = "<group>"; };
+		F704C6831B7EA60500607747 /* tutorial_background_04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tutorial_background_04@2x.jpg"; sourceTree = "<group>"; };
+		F7A239B51B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstStartGuideViewController.swift; sourceTree = "<group>"; };
 		F7CC629C1B7DE4370027F706 /* FoodAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CC62A01B7DE4370027F706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7CC62A11B7DE4370027F706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F704C6771B7EA60500607747 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F704C6791B7EA60500607747 /* background-gradient@2x.png */,
+				F704C67A1B7EA60500607747 /* button-background.png */,
+				F704C67B1B7EA60500607747 /* button-background@2x.png */,
+				F704C67C1B7EA60500607747 /* Default-568h@2x.png */,
+				F704C67D1B7EA60500607747 /* Default.png */,
+				F704C67E1B7EA60500607747 /* Default@2x.png */,
+				F704C6831B7EA60500607747 /* tutorial_background_04@2x.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F7CC62931B7DE4370027F706 = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +116,15 @@
 			isa = PBXGroup;
 			children = (
 				F7CC62A11B7DE4370027F706 /* AppDelegate.swift */,
+				F7A239B51B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift */,
 				F7CC62A31B7DE4370027F706 /* FirstViewController.swift */,
 				F7CC62A51B7DE4370027F706 /* SecondViewController.swift */,
 				F7CC62A71B7DE4370027F706 /* Main.storyboard */,
+				F704C6801B7EA60500607747 /* tutorial_background_01@2x.jpg */,
+				F704C6811B7EA60500607747 /* tutorial_background_02@2x.jpg */,
+				F704C6821B7EA60500607747 /* tutorial_background_03@2x.jpg */,
 				F7CC62AA1B7DE4370027F706 /* Images.xcassets */,
+				F704C6771B7EA60500607747 /* Resources */,
 				F7CC62AC1B7DE4370027F706 /* LaunchScreen.xib */,
 				F7CC629F1B7DE4370027F706 /* Supporting Files */,
 			);
@@ -196,8 +237,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CC62A91B7DE4370027F706 /* Main.storyboard in Resources */,
+				F704C7551B7EA60500607747 /* background-gradient@2x.png in Resources */,
+				F704C75E1B7EA60500607747 /* tutorial_background_03@2x.jpg in Resources */,
+				F704C7581B7EA60500607747 /* Default-568h@2x.png in Resources */,
 				F7CC62AE1B7DE4370027F706 /* LaunchScreen.xib in Resources */,
+				F704C7591B7EA60500607747 /* Default.png in Resources */,
+				F704C75C1B7EA60500607747 /* tutorial_background_01@2x.jpg in Resources */,
+				F704C75F1B7EA60500607747 /* tutorial_background_04@2x.jpg in Resources */,
+				F704C7571B7EA60500607747 /* button-background@2x.png in Resources */,
+				F704C75D1B7EA60500607747 /* tutorial_background_02@2x.jpg in Resources */,
 				F7CC62AB1B7DE4370027F706 /* Images.xcassets in Resources */,
+				F704C75A1B7EA60500607747 /* Default@2x.png in Resources */,
+				F704C7561B7EA60500607747 /* button-background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CC62A61B7DE4370027F706 /* SecondViewController.swift in Sources */,
+				F7A239B61B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift in Sources */,
 				F7CC62A21B7DE4370027F706 /* AppDelegate.swift in Sources */,
 				F7CC62A41B7DE4370027F706 /* FirstViewController.swift in Sources */,
 			);
@@ -346,6 +398,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ranhui/ios/test/test1/Pods/BmobSDK,
+					/Users/ranhui/ios/test/test1/test1/BmobSDK,
+				);
 				INFOPLIST_FILE = FoodAnalyzer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +413,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ranhui/ios/test/test1/Pods/BmobSDK,
+					/Users/ranhui/ios/test/test1/test1/BmobSDK,
+				);
 				INFOPLIST_FILE = FoodAnalyzer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +477,7 @@
 				F7CC62BF1B7DE4370027F706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7CC62C01B7DE4370027F706 /* Build configuration list for PBXNativeTarget "FoodAnalyzerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +486,7 @@
 				F7CC62C21B7DE4370027F706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
