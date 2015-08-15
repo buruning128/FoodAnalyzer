@@ -79,8 +79,11 @@ class FirstStartGuideViewController: UIViewController,UIScrollViewDelegate {
     
     //开始使用app
     func guideOver(){
-        var mainVC=UINavigationController(rootViewController: UITableViewController())
-        self.presentViewController(mainVC, animated: true, completion: nil)
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let vc : UINavigationController = mainStoryboard.instantiateViewControllerWithIdentifier("StartUpIdentifier") as! UINavigationController
+                self.presentViewController(vc, animated: true, completion: nil)
+    
+        
         
     }
     

@@ -17,9 +17,12 @@
 		F704C7F41B7F243D00607747 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F704C7F31B7F243D00607747 /* WeightViewController.swift */; };
 		F704C7F61B7F244A00607747 /* AssessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F704C7F51B7F244A00607747 /* AssessViewController.swift */; };
 		F704C7FA1B7F295000607747 /* MyCells.plist in Resources */ = {isa = PBXBuildFile; fileRef = F704C7F91B7F295000607747 /* MyCells.plist */; };
+		F72475221B7F70D9000DBCE4 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72475211B7F70D9000DBCE4 /* MyTableViewCell.swift */; };
+		F72475281B7F7A34000DBCE4 /* MyCellAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72475271B7F7A34000DBCE4 /* MyCellAboutUsViewController.swift */; };
+		F724752A1B7F7A3B000DBCE4 /* MyCellSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72475291B7F7A3B000DBCE4 /* MyCellSuggestionViewController.swift */; };
+		F79D11321B7F84CA001CDC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D11301B7F84CA001CDC14 /* Main.storyboard */; };
 		F7A239B61B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A239B51B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift */; };
 		F7CC62A21B7DE4370027F706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC62A11B7DE4370027F706 /* AppDelegate.swift */; };
-		F7CC62A91B7DE4370027F706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7CC62A71B7DE4370027F706 /* Main.storyboard */; };
 		F7CC62AB1B7DE4370027F706 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CC62AA1B7DE4370027F706 /* Images.xcassets */; };
 		F7CC62AE1B7DE4370027F706 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CC62AC1B7DE4370027F706 /* LaunchScreen.xib */; };
 		F7CC62BA1B7DE4370027F706 /* FoodAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC62B91B7DE4370027F706 /* FoodAnalyzerTests.swift */; };
@@ -46,11 +49,14 @@
 		F704C7F31B7F243D00607747 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		F704C7F51B7F244A00607747 /* AssessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessViewController.swift; sourceTree = "<group>"; };
 		F704C7F91B7F295000607747 /* MyCells.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCells.plist; sourceTree = "<group>"; };
+		F72475211B7F70D9000DBCE4 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F72475271B7F7A34000DBCE4 /* MyCellAboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellAboutUsViewController.swift; sourceTree = "<group>"; };
+		F72475291B7F7A3B000DBCE4 /* MyCellSuggestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellSuggestionViewController.swift; sourceTree = "<group>"; };
+		F79D11311B7F84CA001CDC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7A239B51B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstStartGuideViewController.swift; sourceTree = "<group>"; };
 		F7CC629C1B7DE4370027F706 /* FoodAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CC62A01B7DE4370027F706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7CC62A11B7DE4370027F706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7CC62A81B7DE4370027F706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7CC62AA1B7DE4370027F706 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7CC62AD1B7DE4370027F706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F7CC62B31B7DE4370027F706 /* FoodAnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,14 +111,17 @@
 		F7CC629E1B7DE4370027F706 /* FoodAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				F79D11301B7F84CA001CDC14 /* Main.storyboard */,
 				F7CC62A11B7DE4370027F706 /* AppDelegate.swift */,
 				F7A239B51B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift */,
 				F704C7F31B7F243D00607747 /* WeightViewController.swift */,
 				F704C7ED1B7F243000607747 /* IntakeViewController.swift */,
 				F704C7F51B7F244A00607747 /* AssessViewController.swift */,
 				F704C7EE1B7F243000607747 /* MyViewController.swift */,
+				F72475211B7F70D9000DBCE4 /* MyTableViewCell.swift */,
+				F72475291B7F7A3B000DBCE4 /* MyCellSuggestionViewController.swift */,
+				F72475271B7F7A34000DBCE4 /* MyCellAboutUsViewController.swift */,
 				F704C7EF1B7F243000607747 /* PhysicalStatusViewController.swift */,
-				F7CC62A71B7DE4370027F706 /* Main.storyboard */,
 				F704C6801B7EA60500607747 /* tutorial_background_01@2x.jpg */,
 				F704C6811B7EA60500607747 /* tutorial_background_02@2x.jpg */,
 				F704C6821B7EA60500607747 /* tutorial_background_03@2x.jpg */,
@@ -231,9 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F704C7FA1B7F295000607747 /* MyCells.plist in Resources */,
-				F7CC62A91B7DE4370027F706 /* Main.storyboard in Resources */,
 				F704C75E1B7EA60500607747 /* tutorial_background_03@2x.jpg in Resources */,
 				F7CC62AE1B7DE4370027F706 /* LaunchScreen.xib in Resources */,
+				F79D11321B7F84CA001CDC14 /* Main.storyboard in Resources */,
 				F704C75C1B7EA60500607747 /* tutorial_background_01@2x.jpg in Resources */,
 				F704C75F1B7EA60500607747 /* user.jpg in Resources */,
 				F704C75D1B7EA60500607747 /* tutorial_background_02@2x.jpg in Resources */,
@@ -255,10 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F724752A1B7F7A3B000DBCE4 /* MyCellSuggestionViewController.swift in Sources */,
 				F704C7F61B7F244A00607747 /* AssessViewController.swift in Sources */,
+				F72475221B7F70D9000DBCE4 /* MyTableViewCell.swift in Sources */,
 				F704C7F41B7F243D00607747 /* WeightViewController.swift in Sources */,
 				F704C7F01B7F243000607747 /* IntakeViewController.swift in Sources */,
 				F7A239B61B7E2ACD00D5DF5A /* FirstStartGuideViewController.swift in Sources */,
+				F72475281B7F7A34000DBCE4 /* MyCellAboutUsViewController.swift in Sources */,
 				F704C7F11B7F243000607747 /* MyViewController.swift in Sources */,
 				F7CC62A21B7DE4370027F706 /* AppDelegate.swift in Sources */,
 				F704C7F21B7F243000607747 /* PhysicalStatusViewController.swift in Sources */,
@@ -284,10 +296,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F7CC62A71B7DE4370027F706 /* Main.storyboard */ = {
+		F79D11301B7F84CA001CDC14 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F7CC62A81B7DE4370027F706 /* Base */,
+				F79D11311B7F84CA001CDC14 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
