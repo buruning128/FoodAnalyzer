@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lEm-p5-Mhq">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -70,6 +71,33 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qLu-fV-g98">
+                                <rect key="frame" x="16" y="77" width="43" height="41"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxJ-k5-h9f">
+                                <rect key="frame" x="78" y="72" width="240" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">您的食品摄入记录
+完善资料，伦家可以做您的健康顾问~</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="营养师建议：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOn-r5-Xh1">
+                                <rect key="frame" x="16" y="146" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWo-qT-sWa">
+                                <rect key="frame" x="16" y="175" width="302" height="82"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">能量估算
+建议摄入能量总量 建议摄入食物品类及该品类量 各品类摄入量</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="摄入" image="intake" id="cPa-gy-q4n"/>
@@ -81,6 +109,7 @@
         <!--评估-->
         <scene sceneID="BQA-zy-bAR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0Z-qq-sPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="评估" id="4yS-D7-K8F" customClass="AssessViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Vy-HE-Vbv"/>
@@ -89,37 +118,98 @@
                     <view key="view" contentMode="scaleToFill" id="V69-JH-w0H">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y5l-6X-7Cu">
+                                <rect key="frame" x="7" y="72" width="46" height="44"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="这是我们营养师给您的评估结果~" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqL-Js-H0q">
+                                <rect key="frame" x="61" y="72" width="240" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-j8-cSX">
+                                <rect key="frame" x="7" y="183" width="294" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">能量估算
+建议摄入能量总量 建议摄入食物品类及该品类量 各品类摄入量</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="身体状况：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQk-YP-8Iu">
+                                <rect key="frame" x="120" y="125" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="健康" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMa-SJ-9eU">
+                                <rect key="frame" x="222" y="124" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="营养师建议：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAM-9R-dWJ">
+                                <rect key="frame" x="7" y="154" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="膳食推荐：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIG-Rv-4ZX">
+                                <rect key="frame" x="7" y="256" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX食用曲线：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK7-Ua-x8G">
+                                <rect key="frame" x="7" y="353" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="建议食用的食品" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w3-wd-dje">
+                                <rect key="frame" x="7" y="285" width="294" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="评估" image="assess" id="1WO-xh-thC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c0Z-qq-sPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523" y="960"/>
+            <point key="canvasLocation" x="599" y="1054"/>
         </scene>
-        <!--我-->
-        <scene sceneID="kah-Yk-r1E">
+        <!--我的-->
+        <scene sceneID="xxp-7z-9zo">
             <objects>
-                <viewController title="我" id="aEQ-vf-uJB" customClass="MyViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h08-ZM-uVm"/>
-                        <viewControllerLayoutGuide type="bottom" id="p0K-vy-WhE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QoX-y8-GUA">
+                <tableViewController id="UPa-sx-4Sq" customClass="MyViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hlo-nM-B7J">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="我" image="my" id="45J-e1-0IW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S43-MV-Rix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCellIdentifier" id="Nrp-f1-GpY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nrp-f1-GpY" id="79y-pD-hh3">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UPa-sx-4Sq" id="BdB-Lb-ipX"/>
+                            <outlet property="delegate" destination="UPa-sx-4Sq" id="s7h-lX-hWU"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="我的" image="my" id="bkW-ci-ze9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ad3-zy-itQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="960"/>
+            <point key="canvasLocation" x="1210" y="960"/>
         </scene>
         <!--First Start Guide View Controller-->
         <scene sceneID="PEm-iR-XM5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9BY-a3-koS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9Fi-Jw-UNp" customClass="FirstStartGuideViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RNw-tK-ldw"/>
@@ -131,6 +221,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9BY-a3-koS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="-730"/>
         </scene>
@@ -153,7 +244,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fed-7T-K55"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -166,9 +256,10 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="4yS-D7-K8F" kind="relationship" relationship="viewControllers" id="tIe-Yv-Ecd"/>
-                        <segue destination="aEQ-vf-uJB" kind="relationship" relationship="viewControllers" id="qM6-dl-6ge"/>
+                        <segue destination="UPa-sx-4Sq" kind="relationship" relationship="viewControllers" id="30L-bH-SBu"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
@@ -177,6 +268,7 @@
         <image name="assess" width="30" height="30"/>
         <image name="intake" width="30" height="30"/>
         <image name="my" width="30" height="30"/>
+        <image name="user.jpg" width="640" height="1136"/>
         <image name="weight" width="30" height="30"/>
     </resources>
 </document>
