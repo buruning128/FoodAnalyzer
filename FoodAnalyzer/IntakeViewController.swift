@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class IntakeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

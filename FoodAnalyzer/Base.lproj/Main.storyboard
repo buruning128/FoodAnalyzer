@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Fi-Jw-UNp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lEm-p5-Mhq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--称重-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="称重" id="9pv-A4-QxB" customClass="FirstViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="称重" id="9pv-A4-QxB" customClass="WeightViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -15,18 +16,53 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65J-2R-9gg">
+                                <rect key="frame" x="89" y="83" width="482" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="P7d-5d-bye"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="食品搜索" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLa-hq-YDw">
+                                <rect key="frame" x="13" y="94" width="71" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="jYA-cA-VKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="65J-2R-9gg" secondAttribute="trailing" constant="13" id="42Y-GX-mQv"/>
+                            <constraint firstItem="pLa-hq-YDw" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-3" id="dC0-AF-HOI"/>
+                            <constraint firstItem="65J-2R-9gg" firstAttribute="leading" secondItem="pLa-hq-YDw" secondAttribute="trailing" constant="5" id="fgK-Fj-sMc"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="称重" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="称重" image="weight" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="iYc-2a-L0E" id="QfQ-Tf-VwC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="iYc-2a-L0E">
+                    <connections>
+                        <outlet property="delegate" destination="9pv-A4-QxB" id="9pO-qD-b9I"/>
+                        <outlet property="searchBar" destination="65J-2R-9gg" id="tyz-Pv-IDs"/>
+                        <outlet property="searchContentsController" destination="9pv-A4-QxB" id="Ufn-vW-tya"/>
+                        <outlet property="searchResultsDataSource" destination="9pv-A4-QxB" id="UUB-Ac-Ndl"/>
+                        <outlet property="searchResultsDelegate" destination="9pv-A4-QxB" id="tHt-Wl-8i0"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-842" y="960"/>
         </scene>
         <!--摄入-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="摄入" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="摄入" id="8rJ-Kc-sve" customClass="IntakeViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -36,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="摄入" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="摄入" image="intake" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +81,7 @@
         <!--评估-->
         <scene sceneID="BQA-zy-bAR">
             <objects>
-                <viewController title="评估" id="4yS-D7-K8F" sceneMemberID="viewController">
+                <viewController title="评估" id="4yS-D7-K8F" customClass="AssessViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Vy-HE-Vbv"/>
                         <viewControllerLayoutGuide type="bottom" id="MxU-pv-ibd"/>
@@ -55,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="评估" id="1WO-xh-thC"/>
+                    <tabBarItem key="tabBarItem" title="评估" image="assess" id="1WO-xh-thC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0Z-qq-sPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +100,7 @@
         <!--我-->
         <scene sceneID="kah-Yk-r1E">
             <objects>
-                <viewController title="我" id="aEQ-vf-uJB" sceneMemberID="viewController">
+                <viewController title="我" id="aEQ-vf-uJB" customClass="MyViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h08-ZM-uVm"/>
                         <viewControllerLayoutGuide type="bottom" id="p0K-vy-WhE"/>
@@ -74,7 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" id="45J-e1-0IW"/>
+                    <tabBarItem key="tabBarItem" title="我" image="my" id="45J-e1-0IW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S43-MV-Rix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,6 +119,7 @@
         <!--First Start Guide View Controller-->
         <scene sceneID="PEm-iR-XM5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9BY-a3-koS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9Fi-Jw-UNp" customClass="FirstStartGuideViewController" customModule="FoodAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RNw-tK-ldw"/>
@@ -94,14 +131,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9BY-a3-koS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="-730"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EQX-ad-Pd6">
+            <objects>
+                <navigationController id="lEm-p5-Mhq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K4M-Bl-ez8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="relationship" relationship="rootViewController" id="1vH-4K-26o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="St3-UQ-Mmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fed-7T-K55"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -115,13 +169,14 @@
                         <segue destination="aEQ-vf-uJB" kind="relationship" relationship="viewControllers" id="qM6-dl-6ge"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="assess" width="30" height="30"/>
+        <image name="intake" width="30" height="30"/>
+        <image name="my" width="30" height="30"/>
+        <image name="weight" width="30" height="30"/>
     </resources>
 </document>
